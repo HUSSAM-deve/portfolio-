@@ -339,17 +339,44 @@ h3{
 }
 
 /* ----- ABOUT / SKILLS BOX ----- */
-.skills-box{
+.skills-box {
     margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* إطار خفيف حول القسم */
+    border-radius: 10px; /* زوايا مستديرة */
+    background-color: #f9f9f9; /* خلفية فاتحة */
 }
-.skills-header{
+
+.skills-header {
     margin-bottom: 30px;
+    font-size: 1.5rem; /* حجم النص */
+    color: #333; /* لون النص */
+    text-align: center; /* توسيط العنوان */
 }
-.skills-list{
+
+.skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px; /* مسافة بين العناصر */
+    justify-content: center; /* توسيط القائمة */
 }
+
+.skills-list .skill {
+    padding: 8px 15px;
+    background-color: #007bff; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    border-radius: 5px; /* زوايا مستديرة */
+    font-size: 1rem; /* حجم النص */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.skills-list .skill:hover {
+    background-color: #0056b3; /* لون الخلفية عند التمرير */
+    transform: scale(1.1); /* تكبير بسيط عند التمرير */
+}
+
 .skills-list span{
     font-size: 14px;
     background: var(--first-color);
